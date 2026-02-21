@@ -7,7 +7,25 @@
     <title>Understanding Analysis</title>
     <link rel="shortcut icon" href="./favicon.jpg" type="image/x-icon">
 
+    <!-- Water.CSS Theme -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+
+    <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body, {
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          throwOnError : false
+        });">
+    </script>
 </head>
 
 <body style="font-family: Arial, Helvetica, sans-serif">
@@ -40,6 +58,25 @@
                 obvious and
                 fairly intuitive and that's not the case when it comes to prove those results. In this course, we learn
                 how to use axioms, definitions and theorems effectively to prove desired results.
+            </p>
+
+            <p>
+                For example, consider something as intuitively fundamental as the associative property of addition applied
+                to the series $\sum_{n = 1}^{\infty} (-1)^n$. Grouping
+
+                $$(-1 + 1) + (-1 + 1) +  \cdots = 0 + 0  + \cdots = 0,$$
+
+                whereas grouping in another yields
+
+                $$\begin{aligned}
+                -1 + (1 - 1) + (1 - 1) + \cdots &= -1 + 0 + 0 + \cdots \\
+                &= -1.
+                \end{aligned}$$
+
+                <blockquote>
+                    Manipultations that are legitimate in finite settings do not always extend to infinite settings.
+                    Deciding when they do and when they do not is one of the central themes of analysis.
+                </blockquote>
             </p>
 
             <p>
@@ -91,6 +128,16 @@
                 <a href="./assignments/">My solutions</a> of
                 <a href="./assignments/hw2.pdf">Homework 2</a>
             </li>
+
+            <li>
+                <a href="./assignments/HW_3_Solutions.pdf">My solutions</a> of
+                <a href="./assignments/hw3.pdf">Homework 3</a>
+            </li>
+
+            <!-- <li>
+                <a href="./assignments/HW_3_Solutions.pdf">My solutions</a> of
+                <a href="./assignments/hw4.pdf">Homework 4</a>
+            </li> -->
         </ul>
     </section>
 
